@@ -22,6 +22,7 @@ export class MarvelListComponent implements OnInit {
 
   openDialog (character: any): void {
     const characterDialog = this.dialog.open(MarvelDialogComponent, {
+      maxWidth: '50%',
       data: character
     });
   }

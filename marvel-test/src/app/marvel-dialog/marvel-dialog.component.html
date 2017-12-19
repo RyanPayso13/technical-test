@@ -1,14 +1,16 @@
 <mat-card>
-  <mat-card-header>
-    <div mat-card-avatar></div>
-    <mat-card-title>{{data.name}}</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <img mat-card-image src="{{data.thumbnail.path}}.{{data.thumbnail.extension}}" alt="{{data.name}}">
-    <p>{{data.description}}</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
+	<mat-card-header>
+		<mat-card-title>
+			{{data.name}}
+		</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+		<img class="mat-card-image" src="{{data.thumbnail.path}}.{{data.thumbnail.extension}}" alt="{{data.name}}">
+		<p>{{data.description}}</p>
+	</mat-card-content>
+	<mat-card-actions>
+		<mat-tab-group>
+			<mat-tab *ngFor="let url of data.urls; let i = index" label="{{url.type}}"></mat-tab>
+		</mat-tab-group>
+	</mat-card-actions>
 </mat-card>

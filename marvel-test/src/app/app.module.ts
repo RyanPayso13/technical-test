@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -26,7 +27,8 @@ import { MarvelListService } from './marvel-list/marvel-list.service';
     MatToolbarModule,
     MatListModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [MarvelListService],
   bootstrap: [AppComponent],
