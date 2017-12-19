@@ -1,0 +1,7 @@
+<mat-list>
+  <mat-list-item *ngFor="let character of characters" (click)="openDialog(character)">
+    <img matListAvatar src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.name}}">
+    <h3 matLine> {{character.name}} </h3>
+    <p matLine>{{character.description}}</p>
+  </mat-list-item>
+</mat-list>
