@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -24,7 +25,8 @@ import { MarvelListService } from './marvel-list/marvel-list.service';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [MarvelListService],
   bootstrap: [AppComponent],

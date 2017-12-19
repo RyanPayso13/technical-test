@@ -1,4 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
