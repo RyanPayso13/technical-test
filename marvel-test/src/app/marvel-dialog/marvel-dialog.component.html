@@ -10,7 +10,7 @@
 	</mat-card-content>
 	<mat-card-actions>
 		<mat-tab-group>
-			<mat-tab *ngFor="let url of data.urls; let i = index" label="{{url.type}}"></mat-tab>
+			<mat-tab *ngFor="let url of data.urls; let i = index" label="{{url.type | linkFormat}}"></mat-tab>
 		</mat-tab-group>
 	</mat-card-actions>
 </mat-card>

@@ -13,12 +13,14 @@ import { MarvelListComponent } from './marvel-list/marvel-list.component';
 import { MarvelDialogComponent } from './marvel-dialog/marvel-dialog.component';
 
 import { MarvelListService } from './marvel-list/marvel-list.service';
+import { LinkFormatPipe } from './pipes/link-format.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarvelListComponent,
-    MarvelDialogComponent
+    MarvelDialogComponent,
+    LinkFormatPipe
   ],
   imports: [
     HttpClientModule,
